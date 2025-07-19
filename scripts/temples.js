@@ -13,3 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+function fullName(fist, last){
+    fullName = fist + last;
+    return fullName;
+}
+
+fullNanme("John", "Doe");

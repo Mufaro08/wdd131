@@ -5,7 +5,7 @@ const para2 = footer.querySelector("p:nth-of-type(2)");
 const currentYear = new Date().getFullYear();
 const lastModified = document.lastModified;
 
-para.textContent = `© ${currentYear} Mufaro Justice Tapera`;
+para1.textContent = `© ${currentYear} Mufaro Justice Tapera`;
 para2.textContent = `Last Modified: ${lastModified}`;
 
 

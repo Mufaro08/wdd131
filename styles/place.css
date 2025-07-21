@@ -6,7 +6,7 @@
 
 :root {
   background-color: #A028FA;
-  color: white;
+  color: #F0F0F0;
 }
 body{
      font-family: 'Roboto', sans-serif;
@@ -14,7 +14,8 @@ body{
 
 main{
     background-color: #A028FA;
-    color: white;
+    color: #F0F0F0;
+    font-weight: bold;
 }
 
 header h1{
@@ -51,24 +52,17 @@ img{
 
 .container h2{
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #F0F0F0;
+    font-weight: bold;
     padding-bottom: 20px;
     text-align: center;
 }   
 
-.labels label{
+.labels label, span{
     font-size: 1.2rem;
-    color: #Ffffff;
+    font-weight: bold;
+    color: #F0F0F0;
     margin-right: 20px;
-}
-
-.labels input[type="text"]{
-    flex: 1;    
-    height: 2.2rem;
-    border: 1px solid #ccc;
-    padding-left: 2px;
-    border-radius: 5px;
-    margin-left: 50px;
 }
 
 .form-group
@@ -82,10 +76,11 @@ img{
 
 footer{
     background-color: #5C28FA;
-    color: white;
+    color: #F0F0F0;
     height: 4.1rem;
     padding: 2rem;
     text-align: center;
+    font-weight: bold;
 }
 
 .data, .weather{
@@ -95,7 +90,8 @@ footer{
 @media (min-width: 768px) {
   .data,
   .weather {
-    background-color:  #A028FA;
+    /* background-color:  #A028FA; */
+    background-color: rgba(160, 40, 250, 0.85);
     position: absolute;
     top: 30%;
     left: 5%;

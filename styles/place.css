@@ -107,7 +107,7 @@ footer{
   }
 
   .weather-heading::after {
-    content: url('../images/weather.png'); 
+    background-image: url('../images/weather.svg'); 
     display: inline-block;
     margin-left: 0.5rem;
     vertical-align: middle;

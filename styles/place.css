@@ -2,12 +2,14 @@
     padding:0 ;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 :root {
-  --main-bg-color: #A028FA;
-  --main-text-color: white;
+  background-color: #A028FA;
+  color: white;
+}
+body{
+     font-family: 'Roboto', sans-serif;
 }
 
 main{

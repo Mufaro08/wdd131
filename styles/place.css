@@ -1,0 +1,113 @@
+*{
+    padding:0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: #A028FA;
+    color: white;
+}
+
+header h1{
+    color: black;
+    background-color: #FA2928;
+    text-align: center;
+    margin: 3,5rem;
+    padding: 3rem;
+}
+
+img{
+    position: relative;
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures it fills and crops nicely */
+  display: block;
+
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    }    
+
+
+
+.container h2{
+    font-size: 5.5rem;
+    color: #ffffff;
+    padding-bottom: 20px;
+    text-align: center;
+}   
+
+.labels label{
+    font-size: 1.2rem;
+    color: #Ffffff;
+    margin-right: 20px;
+}
+
+.labels input[type="text"]{
+    flex: 1;    
+    height: 2.2rem;
+    border: 1px solid #ccc;
+    padding-left: 2px;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.form-group
+{
+    
+    max-width: 300px;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+footer{
+    background-color: #5C28FA;
+    color: white;
+    height: 4.1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.data, .weather{
+    position: static;
+}
+
+@media (min-width: 768px) {
+  .data,
+  .weather {
+    background-color:  #A028FA;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 30%;
+    margin: 0;
+  }
+   .weather{
+    top: 80%; /* Adjust separately from data-section */
+    left: auto;
+    right: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  .weather-heading::after {
+    content: url('../images/weather.png'); 
+    display: inline-block;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+    height: 1.5rem;
+    width: 1.5rem;
+    max-width: 30%;
+    object-fit: contain;
+
+  }
+}

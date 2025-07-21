@@ -20,7 +20,7 @@ img{
     position: relative;
     width: 100vw;
   height: 100vh;
-  object-fit: cover; /* Ensures it fills and crops nicely */
+  object-fit: cover; 
   display: block;
 
 }
@@ -92,7 +92,7 @@ footer{
     margin: 0;
   }
    .weather{
-    top: 80%; /* Adjust separately from data-section */
+    top: 80%;
     left: auto;
     right: 10%;
   }

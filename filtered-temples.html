@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a home page for the Dynamic web Fundamentals">
+    <meta name="author" content="Mufaro Justice Tapera">
+    <link rel="stylesheet" href="./styles/temples-large.css">
+    <link rel="stylesheet" href="./styles/fltered-temples.css">
+    <script src="./scripts/filtered-temples.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Temple Album</title>
+</head>
+<body>
+    <header>
+        <span id="title">Temple Album</span>
+    <button type="button" id="hamburger" aria-label="Toggle menu">&#9776;</button> 
+    
+    <nav id="nav-menu">
+
+            <ul>
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+
+       
+    </header>
+
+    <main >
+    <h1>The Temple</h1>
+    <div class="container" id="Container">
+    
+    </div>    
+
+   
+    </main>
+    
+    
+    <footer>
+         <p>&copy; <span id="currentyear"></span></p>
+         <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

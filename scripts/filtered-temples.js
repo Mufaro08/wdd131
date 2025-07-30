@@ -1,21 +1,17 @@
-// Wait for DOM to fully load
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.querySelector("nav ul");
 
-    // Hamburger menu toggle
     hamburger.addEventListener("click", () => {
         navMenu.classList.toggle("show");
 
-        // Switch between ☰ and ✖
         if (navMenu.classList.contains("show")) {
-            hamburger.innerHTML = "✖"; // Close icon
+            hamburger.innerHTML = "✖"; 
         } else {
-            hamburger.innerHTML = "&#9776;"; // Hamburger icon
+            hamburger.innerHTML = "&#9776;"; 
         }
     });
 
-    // Temples array
     const temples = [
         {
             templeName: "Aba Nigeria",
@@ -91,9 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const container = document.getElementById('Container');
 
-    // Display temple cards
     function displayTemples(list) {
-        container.innerHTML = ""; // Clear previous cards
+        container.innerHTML = ""; 
 
         list.forEach(temple => {
             const card = document.createElement('div');
@@ -111,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Filter temple list based on type
     function filterTemples(type) {
         let filtered = [];
 
@@ -135,18 +129,16 @@ document.addEventListener("DOMContentLoaded", () => {
         displayTemples(filtered);
     }
 
-    // Load all temples on initial page load
     displayTemples(temples);
 
-    // Set up nav menu click filters
-    const navLinks = document.querySelectorAll("#nav-menu a");
+        const navLinks = document.querySelectorAll("#nav-menu a");
 
     navLinks.forEach(link => {
         link.addEventListener("click", (event) => {
             event.preventDefault();
             const type = link.getAttribute("data-filter");
 
-            // Toggle active link style (optional)
+            
             navLinks.forEach(l => l.classList.remove("active"));
             link.classList.add("active");
 

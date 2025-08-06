@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/form.css" />
+  <link rel="stylesheet" href="../styles/form.css" />
   <script src="./scripts/form.js" defer></script>
   <script src="./scripts/getdates.js" defer></script>
   <title>Product Review Form</title>
@@ -16,14 +16,11 @@
 
   <main>
     <form method="get" action="review.html">
-      <!-- Product Name -->
       <label for="productName">Product Name:</label>
       <select id="productName" name="productName" required>
         <option disabled selected>Select a Product ...</option>
-        <!-- Options will be populated via JS -->
       </select>
 
-      <!-- Overall Rating -->
       <fieldset>
         <legend>Overall Rating:</legend>
         <label><input type="radio" name="rating" value="1" required /> 1 ☆</label>
@@ -33,11 +30,9 @@
         <label><input type="radio" name="rating" value="5" /> 5 ☆☆☆☆☆</label>
       </fieldset>
 
-      <!-- Date of Installation -->
       <label for="installDate">Date of Installation:</label>
       <input type="date" id="installDate" name="installDate" required />
 
-      <!-- Useful Features -->
       <fieldset>
         <legend>Useful Features:</legend>
         <label><input type="checkbox" id="feature1" name="features" value="Fast" /> Fast</label>
@@ -45,15 +40,12 @@
         <label><input type="checkbox" id="feature3" name="features" value="Affordable" /> Affordable</label>
       </fieldset>
 
-      <!-- Written Review -->
       <label for="review">Written Review:</label>
       <textarea id="review" name="review" rows="4" placeholder="Write your review here..."></textarea>
 
-      <!-- User Name -->
       <label for="userName">Your Name:</label>
       <input type="text" id="userName" name="userName" placeholder="Optional" />
 
-      <!-- Submit -->
       <input type="submit" value="Submit Review" />
     </form>
   </main>
@@ -62,6 +54,5 @@
     <p></p>
     <p></p>
   </footer>
-  <!--<script src="./scripts/form.js"></script> -->
 </body>
 </html>

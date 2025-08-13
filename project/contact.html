@@ -3,21 +3,76 @@
 <head>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a services page for the Siteplan website which is my project. This is a web developing website showcasing my skills and my contact details">
+    <meta name="description" content="Get in touch with TapTech Solutions. Contact us today via email, phone, or social media for your next web design and development project.">
     <meta name="author" content="Mufaro Justice Tapera">
     <link rel="stylesheet" href="../styles/project.css">
     <script src="../scripts/project.js" defer></script>
     <script src="../scripts/getdates.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Services</title>
+    <title>Contact Us</title>
 </head>
 <body>
+<header>
+  <nav>
+    <h1>TapTech Solutions</h1>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+     <section class="contact-container">
+            <form id="contactForm">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h2>Our Contact Details</h2>
+                <p><strong>Email:</strong> contact@taptechsolutions.com</p>
+                <p><strong>Phone:</strong> +263 778684558</p>
+                <p><strong>Address:</strong> 5766 Rockview Park, Harare, Zimbabwe</p>
+                <p><strong>Follow us:</strong> 
+                    <a href="#">Facebook</a> 
+                    <a href="#">Twitter</a>  
+                    <a href="#">LinkedIn</a>
+                </p>
+            </div>
+
+            <section>
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <!-- Google Maps Embed -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.79228616376!2d31.188978774369925!3d-17.89516357818197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931bfea5fa9eeaf%3A0x9ece7aebf31bc48e!2sElectronic%20Footprint%20Pvt%20Ltd!5e0!3m2!1sen!2szw!4v1755111912522!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+        </section>
+  </main>
 
   
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 TapTech Solutions. All rights reserved.</p>
+    <p></p>
+    <p></p>
     <div class="social-links">
       <a href="#">Instagram</a> |
       <a href="#">Twitter</a> |

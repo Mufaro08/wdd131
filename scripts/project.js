@@ -1,14 +1,14 @@
 const footer = document.querySelector("footer");
 const firstParagraph = footer.querySelector("p");
-//const secondParagraph = footer.querySelector("p:nth-of-type(2)");
+const secondParagraph = footer.querySelector("p:nth-of-type(2)");
 
 
 const currentYear = new Date().getFullYear();
-//const lastModified = document.lastModified;
+const lastModified = document.lastModified;
 
 
 firstParagraph.textContent = `© ${currentYear} TapTech Solutions. All rights reserved.`;
-//secondParagraph.textContent = `Last Modified: ${lastModified}`;
+secondParagraph.textContent = `Last Modified: ${lastModified}`;
 
 
 function highlightCard(card) {
@@ -21,4 +21,60 @@ function highlightCard(card) {
   // Highlight clicked card
   card.style.borderLeftColor = '#0072ff';
   card.style.backgroundColor = '#e6f0ff';
+}
+
+// Array of reasons for contact
+const contactReasons = [
+  "Project Inquiry",
+  "Website Support",
+  "Partnership Proposal",
+  "General Question",
+  "Other"
+];
+
+// Array to store submitted messages (demo only, not persistent)
+let submittedMessages = [];
+
+// Populate the reason dropdown from the array
+const reasonSelect = document.getElementById("reason");
+contactReasons.forEach(reason => {
+  let option = document.createElement("option");
+  option.value = reason;
+  option.textContent = reason;
+  reasonSelect.appendChild(option);
+});
+
+// Handle form submission
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Gather form values
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const reason = document.getElementById("reason").value;
+  const message = document.getElementById("message").value.trim();
+
+  // Push message to the array
+  submittedMessages.push({ name, email, reason, message });
+
+  // Show confirmation message
+  document.getElementById("submissionResult").textContent = "✅ Your message has been sent successfully!";
+
+  // Update the demo messages list
+  updateMessagesList();
+
+  // Reset form
+  document.getElementById("contactForm").reset();
+});
+
+// Function to update the "Previous Messages" list
+function updateMessagesList() {
+  const list = document.getElementById("messagesList");
+  list.innerHTML = "";
+  
+  submittedMessages.forEach((msg, index) => {
+    let li = document.createElement("li");
+    li.textContent = `${index + 1}. ${msg.name} (${msg.email}) - [${msg.reason}]: ${msg.message}`;
+    list.appendChild(li);
+  });
 }

@@ -35,14 +35,7 @@ const contactReasons = [
 // Array to store submitted messages (demo only, not persistent)
 let submittedMessages = [];
 
-// Populate the reason dropdown from the array
-// // const reasonSelect = document.getElementById("reason");
-// // contactReasons.forEach(reason => {
-// //   let option = document.createElement("option");
-// //   option.value = reason;
-// //   option.textContent = reason;
-// //   reasonSelect.appendChild(option);
-// // });
+
 
 // Handle form submission
 document.getElementById("contactForm").addEventListener("submit", function(event) {
@@ -51,7 +44,6 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   // Gather form values
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
-  // const reason = document.getElementById("reason").value;
   const message = document.getElementById("message").value.trim();
 
   // Push message to the array
@@ -67,14 +59,3 @@ document.getElementById("contactForm").addEventListener("submit", function(event
   document.getElementById("contactForm").reset();
 });
 
-// // // Function to update the "Previous Messages" list
-// // function updateMessagesList() {
-// //   const list = document.getElementById("messagesList");
-// //   list.innerHTML = "";
-  
-//   submittedMessages.forEach((msg, index) => {
-//     let li = document.createElement("li");
-//     li.textContent = `${index + 1}. ${msg.name} (${msg.email}) - [${msg.reason}]: ${msg.message}`;
-//     list.appendChild(li);
-//   });
-// }
